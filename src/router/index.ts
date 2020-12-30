@@ -8,16 +8,19 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    redirect: "emotions-wheel"
+  },
+  {
+    path: "/emotions-wheel",
+    name: "emotions-wheel",
+    component: () =>
+        import(/* webpackChunkName: "emotion-wheel" */ "../views/EmotionWheelView.vue")
   },
   {
     path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    name: "about",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+        import(/* webpackChunkName: "emotion-wheel" */ "../views/About.vue")
   }
 ];
 
