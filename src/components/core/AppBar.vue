@@ -6,19 +6,25 @@
     ></v-avatar>
 
     <v-tabs centered class="ml-n9">
-      <v-tab v-for="{ title, to } in links" :key="title" :to="to">
+      <v-tab v-for="{ title, to } in items" :key="title" :to="to">
         {{ title }}
       </v-tab>
     </v-tabs>
+    <template v-if="$vuetify.breakpoint.mdAndUp">
+      <settings-toggle />
+    </template>
   </v-app-bar>
 </template>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
+import SettingsToggle from "@/components/core/settings/SettingsToggle.vue";
 
-@Component({})
-export default class TheAppBar extends Vue {
-  links = [
+@Component({
+  components: { SettingsToggle }
+})
+export default class AppBar extends Vue {
+  items = [
     {
       title: "Emotions Wheel",
       to: "/emotions-wheel"
@@ -30,3 +36,11 @@ export default class TheAppBar extends Vue {
   ];
 }
 </script>
+<style lang="scss">
+html .v-application .theme--dark {
+  .v-tab--active,
+  .v-tabs-slider-wrapper {
+    color: white !important;
+  }
+}
+</style>
