@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <the-app-bar />
+    <app-bar />
+    <default-settings />
     <v-main>
       <transition mode="out-in">
         <router-view />
@@ -11,12 +12,14 @@
 
 <script lang="ts">
 import Vue from "vue";
-import TheAppBar from "@/components/core/TheAppBar.vue";
+import AppBar from "@/components/core/AppBar.vue";
+import DefaultSettings from "@/components/core/settings/DefaultSettings.vue";
 
 export default Vue.extend({
   name: "App",
   components: {
-    TheAppBar
+    AppBar,
+    DefaultSettings
   },
   data: () => ({})
 });
