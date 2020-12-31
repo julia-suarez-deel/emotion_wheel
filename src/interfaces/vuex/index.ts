@@ -1,5 +1,7 @@
-import {AppState} from "@/interfaces/vuex/app";
+import { AppState } from "@/interfaces/vuex/app";
+import { EmotionState } from "@/interfaces/vuex/emotion";
 
 export interface RootState {
-    app: AppState;
+  app: AppState;
+  emotion: EmotionState;
 }
