@@ -1,3 +1,3 @@
 export interface AppState {
-    isSettingOpen: boolean;
+  isSettingOpen: boolean;
 }

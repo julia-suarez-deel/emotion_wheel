@@ -14,13 +14,15 @@ const routes: Array<RouteConfig> = [
     path: "/emotions-wheel",
     name: "emotions-wheel",
     component: () =>
-        import(/* webpackChunkName: "emotion-wheel" */ "../views/EmotionWheelView.vue")
+      import(
+        /* webpackChunkName: "emotion-wheel" */ "../views/EmotionWheelView.vue"
+      )
   },
   {
     path: "/about",
     name: "about",
     component: () =>
-        import(/* webpackChunkName: "emotion-wheel" */ "../views/About.vue")
+      import(/* webpackChunkName: "emotion-wheel" */ "../views/About.vue")
   }
 ];
 

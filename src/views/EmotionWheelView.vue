@@ -32,7 +32,6 @@ const mapChildrenEmotion = (color, emotion) => {
 
 function flatDeep(object, parentName) {
   const { children, ...otherProps } = object;
-  console.log(otherProps);
   let result = { [object.name]: otherProps, parentName };
   const pendingChildren = children && children.length > 0;
   if (!pendingChildren) return result;

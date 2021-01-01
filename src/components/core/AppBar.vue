@@ -6,9 +6,7 @@
     ></v-avatar>
 
     <v-tabs centered class="ml-n9">
-      <v-tab v-for="{ title, to } in items" :key="title" :to="to">
-        {{ title }}
-      </v-tab>
+      <v-tab v-for="{ title, to } in items" :key="title" :to="to" v-t="title" />
     </v-tabs>
     <template v-if="$vuetify.breakpoint.mdAndUp">
       <settings-toggle />
@@ -26,7 +24,7 @@ import SettingsToggle from "@/components/core/settings/SettingsToggle.vue";
 export default class AppBar extends Vue {
   items = [
     {
-      title: "Emotions Wheel",
+      title: "emotions_wheel",
       to: "/emotions-wheel"
     },
     {
