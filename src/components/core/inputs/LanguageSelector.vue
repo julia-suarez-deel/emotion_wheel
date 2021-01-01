@@ -7,11 +7,12 @@
     outlined
     hide-details
     v-bind="$attrs"
-    @input="changeLanguage"
+    @input="SET_LANGUAGE"
   />
 </template>
 <script>
-import { getLanguage, setLanguage } from "@/utils/i18n";
+import { getLanguage } from "@/utils/i18n";
+import { mapMutations } from "vuex";
 
 const name = "LanguageSelector";
 export default {
@@ -30,10 +31,7 @@ export default {
     }
   },
   methods: {
-    changeLanguage(locale) {
-      this.lang = locale;
-      setLanguage(locale);
-    }
+    ...mapMutations("app", ["SET_LANGUAGE"])
   }
 };
 </script>

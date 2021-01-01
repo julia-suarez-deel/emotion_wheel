@@ -30,16 +30,6 @@ import { mapMutations } from "vuex";
 export default class EmotionWheel extends Vue {
   get options() {
     return {
-      title: {
-        text: "Emotions Wheel",
-        textStyle: {
-          fontSize: 18,
-          align: "center"
-        },
-        subtextStyle: {
-          align: "center"
-        }
-      },
       series: {
         type: "sunburst",
         data: this.emotions

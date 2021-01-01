@@ -17,7 +17,6 @@ import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import EmotionWheel from "@/components/EmotionWheel";
 import EmotionDetail from "@/components/EmotionDetail";
-import rawEmotions from "@/assets/emotions-api";
 import { mapState } from "vuex";
 import { formatDocumentTitle } from "@/utils/meta";
 
@@ -50,12 +49,25 @@ function flatDeep(object, parentName) {
     EmotionDetail
   },
   computed: {
-    ...mapState("emotion", ["activeEmotionId"])
+    ...mapState("emotion", ["activeEmotionId"]),
+    ...mapState("app", ["lang"])
+  },
+  watch: {
+    lang: {
+      immediate: true,
+      async handler(lang) {
+        this.rawEmotions = (
+          await import(`@/assets/emotions/${lang}.json`)
+        ).default;
+      }
+    }
   }
 })
 export default class EmotionWheelView extends Vue {
+  rawEmotions = [];
+
   get emotions() {
-    return rawEmotions.map(emotion => {
+    return this.rawEmotions.map(emotion => {
       const { color, name, children } = emotion;
       return {
         name,
@@ -68,7 +80,7 @@ export default class EmotionWheelView extends Vue {
   }
 
   get keyedEmotions() {
-    return rawEmotions.reduce((result, current) => {
+    return this.rawEmotions.reduce((result, current) => {
       return { ...result, ...flatDeep(current) };
     }, {});
   }
