@@ -1,7 +1,7 @@
 <template>
   <v-switch
     inset
-    label="dark_mode"
+    :label="$t('dark_mode')"
     v-bind="$attrs"
     v-on="$listeners"
     @change="setDarkMode"

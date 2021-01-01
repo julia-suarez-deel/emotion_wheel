@@ -20,8 +20,7 @@
           <v-icon v-else v-text="icon" />
         </v-btn>
       </template>
-
-      {{ path }}
+      <span class="d-inline-block capitalize-fl">{{ $t(path) }}</span>
     </v-tooltip>
   </span>
 </template>

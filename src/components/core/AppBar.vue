@@ -28,7 +28,7 @@ export default class AppBar extends Vue {
       to: "/emotions-wheel"
     },
     {
-      title: "About",
+      title: "about",
       to: "/about"
     }
   ];

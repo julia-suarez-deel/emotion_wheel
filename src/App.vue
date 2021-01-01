@@ -24,3 +24,6 @@ export default Vue.extend({
   data: () => ({})
 });
 </script>
+<style lang="scss">
+@import "~@/styles/main.scss";
+</style>

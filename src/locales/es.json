@@ -1,4 +1,40 @@
 {
+  "$vuetify": {
+    "noDataText": "No hay data disponible",
+    "timePicker": {
+      "am": "AM",
+      "pm": "PM"
+    },
+    "datePicker": {
+      "prevMonthAriaLabel": "Anterior",
+      "nextMonthAriaLabel": "Siguiente"
+    },
+    "dataIterator": {
+      "noResultsText": "No hay resultados disponibles",
+      "loadingText": "Cargando..."
+    },
+    "dataTable": {
+      "itemsPerPageText": "Filas por página:",
+      "ariaLabel": {
+        "sortDescending": "Orden descendente.",
+        "sortAscending": "Orden ascendente.",
+        "sortNone": "Sin ordenar.",
+        "activateNone": "Pulse para quitar orden.",
+        "activateDescending": "Pulse para ordenar descendente.",
+        "activateAscending": "Pulse para ordenar ascendente."
+      },
+      "sortBy": "Ordenado por"
+    },
+    "dataFooter": {
+      "itemsPerPageText": "Elementos por página:",
+      "itemsPerPageAll": "Todos",
+      "nextPage": "Página siguiente",
+      "prevPage": "Página anterior",
+      "firstPage": "Primer página",
+      "lastPage": "Última página",
+      "pageText": "{0}-{1} de {2}"
+    }
+  },
   "emotions_wheel": "ruleta de emociones",
   "settings": "configuración",
   "about": "acerca de",

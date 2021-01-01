@@ -19,6 +19,7 @@ import EmotionWheel from "@/components/EmotionWheel";
 import EmotionDetail from "@/components/EmotionDetail";
 import rawEmotions from "@/assets/emotions-api";
 import { mapState } from "vuex";
+import { formatDocumentTitle } from "@/utils/meta";
 
 const mapChildrenEmotion = (color, emotion) => {
   return {
@@ -40,8 +41,10 @@ function flatDeep(object, parentName) {
   }
   return result;
 }
-
 @Component({
+  metaInfo: {
+    title: formatDocumentTitle("emotions_wheel")
+  },
   components: {
     EmotionWheel,
     EmotionDetail

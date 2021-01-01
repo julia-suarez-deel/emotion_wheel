@@ -3,3 +3,12 @@
     <h1>This is an about page</h1>
   </div>
 </template>
+<script lang="ts">
+import { formatDocumentTitle } from "@/utils/meta";
+
+export default {
+  metaInfo: {
+    title: formatDocumentTitle("about")
+  }
+};
+</script>

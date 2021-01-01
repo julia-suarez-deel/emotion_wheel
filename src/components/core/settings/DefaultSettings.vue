@@ -10,10 +10,13 @@
   >
     <v-container>
       <v-container class="px-2">
-        <v-subheader class="headline pa-0">settings</v-subheader>
+        <v-subheader
+          v-t="'settings'"
+          class="headline pa-0 slim-subheader pb-2"
+        />
         <dark-mode-selector />
         <v-autocomplete
-          label="language"
+          :label="$t('language')"
           :items="['English', 'Spanish']"
           outlined
         />

@@ -1,0 +1,9 @@
+label, .v-input .v-messages__message, .base-radio-group .v-subheader, .v-subheader, .v-data-table-header span, .v-data-table-header th, .v-input--checkbox label, .v-select__selection, .v-select-list .v-list-item__title{
+  &::first-letter{
+    text-transform: uppercase;
+  }
+}
+// Fix display inline block to apply class to capitalize first letter
+.v-application .v-input--selection-controls.v-input .v-label{
+  display: inline-block;
+}
