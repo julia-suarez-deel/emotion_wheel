@@ -6,7 +6,7 @@
     </v-card-text>
   </v-card>
   <v-card v-else>
-    <v-card-title>Select or hover an emotion</v-card-title>
+    <v-card-title>{{ $t("hover_emotion") }}</v-card-title>
   </v-card>
 </template>
 <script>

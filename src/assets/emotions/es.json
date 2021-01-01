@@ -1,116 +1,173 @@
 [
   {
     "name": "Sorpresa",
-    "description": "Something surprising!",
     "color": "#F7B801",
     "children": [
       {
-        "name": "Surprised"
+        "name": "Sorprendido",
+        "description": "El asombro que sientes cuando te sucede algo totalmente inesperado."
       },
       {
-        "name": "Confused"
+        "name": "Confundido",
+        "description": "Desconcertado como resultado de no poder comprender; perplejo."
       },
       {
-        "name": "Astonished"
+        "name": "Asombrado",
+        "description": "Extremadamente sorprendente o impresionante."
       },
       {
-        "name": "Eager"
+        "name": "Entusiasmado",
+        "description": "Sentimiento intenso de exaltación(Atribución de más o gran valor, grandeza u honor a una persona o cosa) del ánimo producido por la admiración apasionada de alguien o algo, que se manifiesta en la manera de hablar o de actuar."
       }
     ]
   },
   {
-    "name": "Joy",
+    "name": "Felicidad",
     "color": "#8332AC",
     "children": [
       {
-        "name": "Cheerful"
+        "name": "Alegre",
+        "description": "Sentimiento de placer producido normalmente por un suceso favorable que suele manifestarse con un buen estado de ánimo, la satisfacción y la tendencia a la risa o la sonrisa."
       },
       {
-        "name": "Interested"
+        "name": "Interesado",
+        "description": "La sensación de querer saber o aprender sobre algo o alguien.\n\n"
       },
       {
-        "name": "Proud"
+        "name": "Orgulloso",
+        "description": "Sentimiento de satisfacción que siente una persona respecto a sí misma. Tambien se presenta como un sentimiento de satisfacción o agradecimiento por los logros ajenos y la felicidad de otro(s)."
       },
       {
-        "name": "Accepted"
+        "name": "Aceptado",
+        "description": "Es cuando persona admite a otra persona, animal, objeto o pensamiento o la acción por la cual las recibe de manera voluntaria.\n\n\n\nAcceptación significa permitir que las experiencias privadas no deseadas (pensamientos, sentimientos e impulsos) vayan y vengan sin luchar con ellas."
       },
       {
-        "name": "Powerful"
+        "name": "Poderoso",
+        "description": "Que tiene autoridad para mandar, dominar o influir sobre otros."
       },
       {
-        "name": "Peaceful"
+        "name": "Pacifico",
+        "description": "Sentimiento de paz y tranquilidad, exento a violencia."
       },
       {
-        "name": "Intimate"
+        "name": "Intimo",
+        "description": "La intimidad implica sentimientos de cercanía emocional y conexión con otra persona. Las relaciones íntimas a menudo se caracterizan por actitudes de confianza, cariño y aceptación mutuas."
       },
       {
-        "name": "Optimistic"
+        "name": "Optimista",
+        "description": "Esperanza y confianza sobre el futuro o el éxito de algo."
       }
     ]
   },
   {
-    "name": "Disgusted",
+    "name": "Tristeza",
+    "color": "#2286D3",
+    "children": [
+      {
+        "name": "Culpable",
+        "description": "Remordimiento causado por sentirse responsable de alguna ofensa"
+      },
+      {
+      "name": "Abandonado",
+      "description": "Sensación en la que las personas se sienten indeseadas, abandonadas, inseguras o descartadas. Las personas que experimentan un abandono emocional pueden sentirse perdidas, aisladas de una fuente crucial de sustento que se les ha retirado, ya sea de forma repentina o mediante un proceso de erosión."
+      },
+      {
+        "name": "Desesperado",
+        "description": "La sensación de que todo va mal y nada saldrá bien."
+      },
+      {
+        "name": "Deprimido",
+        "description": "La depresión es un estado de mal humor y aversión a la actividad. Puede afectar los pensamientos, el comportamiento, la motivación, los sentimientos y la sensación de bienestar de una persona. Se dice que el síntoma central de la depresión es la anhedonia, que se refiere a la pérdida de interés o la pérdida de la sensación de placer en determinadas actividades que suelen traer alegría a las personas."
+      },
+      {
+        "name": "Solo",
+        "description": "La soledad hace que las personas se sientan vacías, solas y no deseadas. Las personas que se sienten solas a menudo anhelan el contacto humano, pero su estado mental hace que sea más difícil establecer conexiones con otras personas. La soledad, según muchos expertos, no se trata necesariamente de estar solo. En cambio, si te sientes solo y aislado, así es como la soledad influye en tu estado mental."
+      },
+      {
+        "name": "Aburrido",
+        "description": "Un estado emocional y ocasionalmente psicológico que se experimenta cuando un individuo se queda sin nada en particular que hacer, no está interesado en su entorno o siente que un día o período es aburrido o tedioso."
+      }
+    ]
+  },
+  {
+    "name": "Asco",
     "color": "#5FAD56",
     "children": [
       {
-        "name": "Abstinence"
+        "name": "Abstinencia",
+        "description": "La abstinencia es una restricción impuesta por uno mismo para no dedicarse a actividades corporales que, en general, se experimentan como placer. Con mayor frecuencia, el término se refiere a la abstinencia sexual, pero también puede significar abstinencia de alcohol, drogas o alimentos."
       },
       {
-        "name": "Horrible"
+        "name": "Horrible",
+        "description": "Un sentimiento intenso de miedo, conmoción o disgusto."
       },
       {
-        "name": "Disappointed"
+        "name": "Decepcionado",
+        "description": "Un sentimiento de insatisfacción que se produce cuando sus expectativas no se cumplen."
       },
       {
-        "name": "Dissatisfied"
+        "name": "Disconforme",
+        "description": "Un anhelo de algo mejor que la situación actual. Que no está de acuerdo con una decisión o no la admite."
       }
     ]
   },
   {
-    "name": "Anger",
+    "name": "Ira",
     "color": "#DD2D4A",
     "children": [
       {
-        "name": "Critical"
+        "name": "Critico",
+        "description": "Cuando se expresa una opinión razonada sobre cualquier asunto que involucre especialmente un juicio de su valor, verdad, rectitud, belleza o técnica."
       },
       {
-        "name": "Distant"
+        "name": "Distante",
+        "description": "El desapego emocional es una incapacidad o falta de voluntad para conectarse con otras personas a nivel emocional. Para algunas personas, el desapego emocional les ayuda a protegerse del drama, la ansiedad o el estrés no deseados."
       },
       {
-        "name": "Frustrated"
+        "name": "Frustrado",
+        "description": "La sensación de estar molesto o irritado como resultado de no poder cambiar o lograr algo.\n\n"
       },
       {
-        "name": "Aggressive"
+        "name": "Agresivo",
+        "description": "Sentir estres, furia o rabia que lleve a demostrar agresión. La agresion es una interacción social abierta o encubierta, a menudo dañina, con la intención de infligir daño u otro daño a otra persona. Puede ocurrir de forma reactiva o sin provocación. En los seres humanos, la agresión puede ser causada por varios factores desencadenantes, desde la frustración debido a objetivos bloqueados hasta sentirse irrespetado."
       },
       {
-        "name": "Hatred"
+        "name": "Odio",
+        "description": "Aversión intensa que podría provocar sentimientos de animosidad, enfado o resentimiento."
       },
       {
-        "name": "Threatened"
+        "name": "Amenazado",
+        "description": "Preocupación por un riesgo o posible peligro existente que represente una amenaza.\n\n"
       },
       {
-        "name": "Hurt"
+        "name": "Herido",
+        "description": "Dolor o angustia emocional; sufrimiento psicológico."
       }
     ]
   },
   {
-    "name": "Fear",
-    "color": "#FF9B42",
+    "name": "Miedo",
+    "color": "#FF6B35",
     "children": [
       {
-        "name": "Humiliated"
+        "name": "Humillado",
+        "description": "Fuertes sentimientos de vergüenza."
       },
       {
-        "name": "Rejected"
+        "name": "Rechazado",
+        "description": "Sentimientos de vergüenza, tristeza o dolor que las personas sienten cuando no son aceptadas por los demás."
       },
       {
-        "name": "Insecure"
+        "name": "Inseguro",
+        "description": "Incertidumbre o ansiedad sobre uno mismo; falta de confianza"
       },
       {
-        "name": "Anxious"
+        "name": "Ansioso",
+        "description": "Una emoción vaga y desagradable que se experimenta en anticipación de alguna desgracia."
       },
       {
-        "name": "Scared"
+        "name": "Asustado",
+        "description": "Una emoción desagradable causada por la amenaza de peligro, dolor o daño.\n\n"
       }
     ]
   }

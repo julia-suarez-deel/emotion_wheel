@@ -49,6 +49,36 @@
     ]
   },
   {
+    "name": "Sadness",
+    "color": "#1A659E",
+    "children": [
+      {
+        "name": "Guilty",
+        "description": ""
+      },
+      {
+        "name": "Abandoned",
+        "description": ""
+      },
+      {
+        "name": "Desperate",
+        "description": ""
+      },
+      {
+        "name": "Depress",
+        "description": ""
+      },
+      {
+        "name": "Lonely",
+        "description": ""
+      },
+      {
+        "name": "Bored",
+        "description": ""
+      }
+    ]
+  },
+  {
     "name": "Disgusted",
     "color": "#5FAD56",
     "children": [

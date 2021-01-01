@@ -32,7 +32,10 @@ export default class EmotionWheel extends Vue {
     return {
       series: {
         type: "sunburst",
-        data: this.emotions
+        data: this.emotions,
+        label: {
+          color: "#fff"
+        }
       }
     };
   }
