@@ -3,8 +3,7 @@
     <v-avatar
       :color="$vuetify.breakpoint.smAndDown ? 'grey darken-1' : 'transparent'"
       size="32"
-    ></v-avatar>
-
+    />
     <v-tabs centered class="ml-n9">
       <v-tab v-for="{ title, to } in items" :key="title" :to="to">
         {{ $t(title) }}
@@ -28,10 +27,6 @@ export default class AppBar extends Vue {
     {
       title: "emotions_wheel",
       to: "/emotions-wheel"
-    },
-    {
-      title: "about",
-      to: "/about"
     }
   ];
 }
