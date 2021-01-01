@@ -10,16 +10,11 @@
   >
     <v-container>
       <v-container class="px-2">
-        <v-subheader
-          v-t="'settings'"
-          class="headline pa-0 slim-subheader pb-2"
-        />
+        <v-subheader class="headline pa-0 slim-subheader pb-2">
+          {{ $t("settings") }}
+        </v-subheader>
         <dark-mode-selector />
-        <v-autocomplete
-          :label="$t('language')"
-          :items="['English', 'Spanish']"
-          outlined
-        />
+        <language-selector />
       </v-container>
     </v-container>
   </v-navigation-drawer>
@@ -30,9 +25,10 @@ import Vue from "vue";
 import { mapMutations, mapState } from "vuex";
 import { Component } from "vue-property-decorator";
 import DarkModeSelector from "@/components/core/inputs/DarkModeSelector";
+import LanguageSelector from "@/components/core/inputs/LanguageSelector";
 
 @Component({
-  components: { DarkModeSelector },
+  components: { LanguageSelector, DarkModeSelector },
   computed: {
     ...mapState("app", ["isSettingOpen"])
   },

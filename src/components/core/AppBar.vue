@@ -6,7 +6,9 @@
     ></v-avatar>
 
     <v-tabs centered class="ml-n9">
-      <v-tab v-for="{ title, to } in items" :key="title" :to="to" v-t="title" />
+      <v-tab v-for="{ title, to } in items" :key="title" :to="to">
+        {{ $t(title) }}
+      </v-tab>
     </v-tabs>
     <template v-if="$vuetify.breakpoint.mdAndUp">
       <settings-toggle />

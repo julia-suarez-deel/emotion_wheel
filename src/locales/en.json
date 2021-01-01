@@ -39,5 +39,7 @@
   "settings": "settings",
   "about": "about",
   "dark_mode": "dark mode",
-  "language": "language"
+  "language": "language",
+  "english": "english",
+  "spanish": "spanish"
 }
